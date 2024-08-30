@@ -3,10 +3,22 @@ body {
     color: white;
 }
 
+.header{
+    border: solid 1px black;
+
+}
+.navbar{
+    border: solid 1px black;
+}
+
+.container{
+    padding: 10px
+}
+
 .img-personal {
     display: flex;
-    width: 40%; 
-    height: 65%;
+    width: 300px; 
+    height: 300px;
     border-radius: 50%; 
     border: 10px solid transparent;
 }
@@ -68,4 +80,17 @@ body {
 
 .sobre-mi{
     max-width: 600px;
+    border: solid 2px black;
+}
+
+@media (max-width: 1120px) {
+ 
+    .contenedor-inicial{
+        display: flex;
+        flex-direction: column;
+        padding-top: 200px;
+    }
+    .sobre-mi{
+        border: solid 4px black;
+    }
 }

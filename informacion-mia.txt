@@ -1,0 +1,11 @@
+Hola, mi nombre es Rubén Mansilla. Soy estudiante de Informática en el instituto DuocUC, actualmente
+                cursando el cuarto semestre de la carrera de Analista Programador Computacional. Además, poseo un título
+                Técnico Profesional en Administración de Empresas.
+                <br>
+                Trabajo en el área administrativa de E-commerce desde 2022, supervisando ventas en múltiples plataformas
+                de Marketplace y coordinando la logística para garantizar entregas precisas. Tengo experiencia y
+                habilidades en Excel avanzado, y poseo una licencia de conducir clase B.
+                <br>
+                Mi meta es involucrarme en proyectos o encargos en el área de informática para reforzar los
+                conocimientos adquiridos durante mi formación académica. Me considero una persona adaptable,
+                comprometida y amable. Además, gracias a mi carrera, hablo inglés.
