@@ -1,8 +1,12 @@
 body {
-    background-color: rgb(0, 45, 74);
+    /*background-color: rgb(0, 45, 74);*/
     color: white;
+
+    --tw-bg-opacity: 1;
+    background: rgb(17 24 39/var(--tw-bg-opacity));
 }
 
+/*luego se borraran*/
 .header{
     border: solid 1px black;
 
@@ -11,30 +15,7 @@ body {
     border: solid 1px black;
 }
 
-.container{
-    padding: 10px
-}
-
-.img-personal {
-    display: flex;
-    width: 300px; 
-    height: 300px;
-    border-radius: 50%; 
-    border: 10px solid transparent;
-}
-
-.contenedor-inicial{
-    padding-top: 150px;
-}
-
-.certificados{
-    padding: 50px;
-}
-
-.proyectos{
-    padding: 50px;
-}
-
+/*Estilos para el navbar y cabezera*/
 .header{
     position: fixed;
     top: 0;
@@ -59,6 +40,27 @@ body {
     color: rgb(135, 170, 235);
 }
 
+.navbar .container{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Estilo de boton despegable del navbar*/
+#navbarNavAltMarkup a{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+
+.container button{
+    /*--tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));*/
+    background-color: rgb(151, 151, 151);
+    margin-right: 10px;
+}
+
+/*Estilos de mi nombre como logo*/
 .logo{
     font-size: 25px;
     color: white;
@@ -70,12 +72,23 @@ body {
     color: rgb(135, 170, 235);
 }
 
-.contenedor-inicial{
-    height: 100vh;
+
+
+
+/*se agregarán estilos a cada sección*/
+
+/*Sobre mi con la fotografia*/
+.img-personal {
     display: flex;
-    align-items: center;
-    padding: 0 10%;
-    justify-content: space-between;
+    width: 300px; 
+    height: 300px;
+    border-radius: 50%; 
+    border: 10px solid transparent;
+}
+
+.sobre-mi h1{
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity))
 }
 
 .sobre-mi{
@@ -83,9 +96,58 @@ body {
     border: solid 2px black;
 }
 
+.contenedor-sobre-mi{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+
+/*Estilos generales de la letra y espaciado de las otras secciones*/
+.mas-info{
+    padding: 50px;
+}
+
+.mas-info h1{
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity));
+}
+
+
+
+
+
+
+/*Mis habilidades*/
+.skills-container h3{
+    border-radius: 10px;
+    margin: 5px auto;
+    padding: 5px;
+    background: red;
+    width: 90%;
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+}
+
+
+
+
+
+/*Diseño de Proyectos*/
+.proyectos{
+    padding: 50px;
+}
+
+
+
+
+
+
+
 @media (max-width: 1120px) {
  
-    .contenedor-inicial{
+    .contenedor-sobre-mi{
         display: flex;
         flex-direction: column;
         padding-top: 200px;
