@@ -122,14 +122,34 @@ body {
 /*Mis habilidades*/
 .skills-container h3{
     border-radius: 10px;
-    margin: 5px auto;
+    margin: 10px auto;
     padding: 5px;
-    background: red;
-    width: 90%;
+    width: 100%;
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+/*Certificados*/
+.certificados-container{
+    border-radius: 10px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    padding: 30px;
+}
+
+.certificados-container .certis{
+    --tw-bg-opacity: 1;
+    background-color:#003366;
+    border-radius: 10px;
+    padding: 10px 0px 10px;
+    
+}
+
+.certis a{
+    text-decoration: none;
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity));
+}
 
 
 
