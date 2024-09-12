@@ -80,8 +80,8 @@ body {
 /*Sobre mi con la fotografia*/
 .img-personal {
     display: flex;
-    width: 300px; 
-    height: 300px;
+    width: 350px; 
+    height: 350px;
     border-radius: 50%; 
     border: 10px solid transparent;
 }
@@ -106,7 +106,9 @@ body {
 
 /*Estilos generales de la letra y espaciado de las otras secciones*/
 .mas-info{
-    padding: 50px;
+
+    padding: 50px 15px;
+    text-align: center;
 }
 
 .mas-info h1{
@@ -115,11 +117,13 @@ body {
 }
 
 
-
-
-
-
 /*Mis habilidades*/
+.habilidades{
+    text-align: center; 
+    max-width: 70%; 
+    margin: 0px auto;
+}
+
 .skills-container h3{
     border-radius: 10px;
     margin: 10px auto;
@@ -129,20 +133,24 @@ body {
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
 }
 
+
+
 /*Certificados*/
 .certificados-container{
+    margin: 0px auto;
     border-radius: 10px;
     --tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-    padding: 30px;
+    padding: 30px 15px;
+    width: 70%;
+
 }
 
 .certificados-container .certis{
     --tw-bg-opacity: 1;
     background-color:#003366;
     border-radius: 10px;
-    padding: 10px 0px 10px;
-    
+    padding: 15px;
 }
 
 .certis a{
@@ -150,6 +158,40 @@ body {
     --tw-text-opacity: 1;
     color: rgb(192 132 252 / var(--tw-text-opacity));
 }
+
+/*Proyectos*/
+.proyectos-container{
+    border-radius: 10px;
+    margin: 0px auto;
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+    padding: 30px;
+    width: 70%;
+}
+
+.proyectos-container .projects{
+    --tw-bg-opacity: 1;
+    background-color:#003366;
+    border-radius: 10px;
+    padding: 10px 0px 10px;
+}
+
+.proyectos-container img{
+    --tw-bg-opacity: 1;
+    display: block; 
+    margin: 15px auto ;
+    border-radius: 10px;
+    border: 4px solid rgb(135 170 235 / var(--tw-bg-opacity));
+
+}
+
+.projects a{
+    text-decoration: none;
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity));
+}
+
+
 
 
 
@@ -175,4 +217,24 @@ body {
     .sobre-mi{
         border: solid 4px black;
     }
+
+    .mas-info{
+        margin-top: 100px;
+    }
+
+    .habilidades{
+        max-width: 100%; 
+        margin-top: 200px;
+    }
+
+    .certificados-container{
+        width: 350px
+    
+    }
+    
+    .certificados-container .certis{
+        width: 300px;
+
+    }
+
 }
