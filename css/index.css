@@ -98,6 +98,7 @@ body {
 
 .contenedor-sobre-mi{
     height: 100vh;
+    text-align: center;
     display: flex;
     align-items: center;
     padding: 0 10%;
@@ -123,7 +124,7 @@ body {
     margin: 0px auto;
 }
 
-.skills-container h3{
+.skills-container h5{
     border-radius: 10px;
     margin: 10px auto;
     padding: 5px;
@@ -245,22 +246,18 @@ body {
 
     .certificados-container{
         width: 350px
-    
     }
     
     .certificados-container .certis{
         width: 300px;
-
     }
 
     .proyectos-container{
         width: 350px
-    
     }
     
     .proyectos-container .projects{
         width: 300px;
-
     }
 
 }
