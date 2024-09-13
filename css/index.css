@@ -106,7 +106,6 @@ body {
 
 /*Estilos generales de la letra y espaciado de las otras secciones*/
 .mas-info{
-
     padding: 50px 15px;
     text-align: center;
 }
@@ -191,15 +190,32 @@ body {
     color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
-
-
-
-
-
-/*Diseño de Proyectos*/
-.proyectos{
-    padding: 50px;
+/*Footer*/
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 130px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));  
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity));
 }
+
+.footer-redes a{
+    text-decoration: none;
+    font-size: 20px;
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity));
+}
+
+.footer-redes i{
+    margin-right: 15px;
+    font-size: 25px;
+    color: white;
+}
+
+
 
 
 
