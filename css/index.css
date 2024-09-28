@@ -177,6 +177,9 @@ body {
     text-decoration: none;
     --tw-text-opacity: 1;
     color: rgb(192 132 252 / var(--tw-text-opacity));
+    background: none; 
+    border: none; 
+    padding: 0;
 }
 
 /*Proyectos*/
@@ -185,6 +188,7 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
+    margin-bottom: 100px;
 }
 
 .proyectos-container{
@@ -278,6 +282,11 @@ body {
     .certificados-container .certis{
         width: 300px;
     }
+
+
+
+
+
 
     .proyectos-container{
         width: 350px
