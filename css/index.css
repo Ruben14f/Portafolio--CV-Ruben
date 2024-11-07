@@ -2,31 +2,41 @@ body {
     color: white;
     --tw-bg-opacity: 1;
     background: rgb(17 24 39/var(--tw-bg-opacity));
-
-    /* AGREGAR IMAGEN
-    background-image: url('../img/JOSEFI.jpg'); /* Ruta relativa dentro del proyecto 
+    background: linear-gradient(rgba(3, 8, 31, 0.953), rgba(2, 6, 23, 0.937)),
+        url('../img/wallpaper/galaxy_background.png');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;*/
-    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
 }
 
-body h1{
+body h1 {
     font-family: 'Silkscreen', sans-serif;
     font-size: 50px;
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity))
 }
 
-p, li, a, h2, h3, h4, h5, h6 {
+p,
+li,
+a,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Atkinson Hyperlegible', sans-serif;
 }
 
 
 /*luego se borraran*/
-.header{
+.header {
     border: solid 1px black;
 
 }
-.navbar{
+
+.navbar {
     border: solid 1px black;
 }
 
@@ -40,10 +50,11 @@ p, li, a, h2, h3, h4, h5, h6 {
     background-color: transparent;
     display: flex;
     justify-content: space-between;
-    z-index: 10; /* Asegura que el header esté por encima del fondo */
+    z-index: 10;
+    /* Asegura que el header esté por encima del fondo */
 }
 
-.navbar a{
+.navbar a {
     margin-left: 35px;
     padding: 0 10px;
     color: white;
@@ -53,24 +64,24 @@ p, li, a, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover,
-.navbar a.active{
+.navbar a.active {
     color: rgb(135, 170, 235);
 }
 
-.navbar .container{
+.navbar .container {
     display: flex;
     flex-direction: column;
 }
 
 /*Estilo de boton despegable del navbar*/
-#navbarNavAltMarkup a{
+#navbarNavAltMarkup a {
     display: flex;
     justify-content: end;
     margin-top: 10px;
 }
 
 
-.container button{
+.container button {
     /*--tw-bg-opacity: 1;
     background-color: rgb(31 41 55 / var(--tw-bg-opacity));*/
     background-color: rgb(151, 151, 151);
@@ -78,14 +89,14 @@ p, li, a, h2, h3, h4, h5, h6 {
 }
 
 /*Estilos de mi nombre como logo*/
-.logo{
+.logo {
     font-size: 25px;
     color: white;
     text-decoration: none;
     font-weight: 600;
 }
 
-.logo:hover{
+.logo:hover {
     color: rgb(135, 170, 235);
 }
 
@@ -97,7 +108,7 @@ p, li, a, h2, h3, h4, h5, h6 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     z-index: 1;
 }
 
@@ -109,45 +120,46 @@ p, li, a, h2, h3, h4, h5, h6 {
     justify-content: center;
     align-items: center;
     padding: 0 10%;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
-.inicio #redes{
+.inicio #redes {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
-    
-    
+    z-index: 10;
+
+
 }
 
 .inicio #redes a {
     display: inline-block;
     text-decoration: none;
-    background-color: white; 
-    border-radius: 50%; 
-    width: 70px; 
+    background-color: white;
+    border-radius: 50%;
+    width: 70px;
     height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.5s ease, background-color 0.5s ease; 
+    box-shadow: 0 5px 9px rgb(66, 0, 120);
+    transition: transform 0.5s ease, background-color 0.5s ease;
 
 }
 
-.inicio #redes i{
+.inicio #redes i {
     font-size: 40px;
     color: rgb(80, 0, 98)
 }
 
 .inicio #redes a:hover {
-    transform: translateY(-10px); 
-    background-color: black; 
+    transform: translateY(-10px);
+    background-color: rgb(120, 0, 136);
 }
 
 .inicio #redes a:hover i {
-    color: white; 
+    color: white;
 }
 
 
@@ -156,29 +168,29 @@ p, li, a, h2, h3, h4, h5, h6 {
 /*se agregarán estilos a cada sección*/
 
 /*Sobre mi con la fotografia*/
-#sobremi{
+#sobremi {
     height: 100vh;
 }
 
 .img-personal {
     display: flex;
-    width: 350px; 
+    width: 350px;
     height: 350px;
-    border-radius: 50%; 
+    border-radius: 50%;
     border: 10px solid transparent;
 }
 
-.sobre-mi h1{
+.sobre-mi h1 {
     --tw-text-opacity: 1;
     color: rgb(192 132 252 / var(--tw-text-opacity))
 }
 
-.sobre-mi{
+.sobre-mi {
     max-width: 600px;
     border: solid 2px black;
 }
 
-.contenedor-sobre-mi{
+.contenedor-sobre-mi {
     height: 100vh;
     text-align: center;
     display: flex;
@@ -187,33 +199,186 @@ p, li, a, h2, h3, h4, h5, h6 {
     justify-content: space-between;
 }
 
+
+/*CURRICULUM*/
+.curriculum h1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.curriculum .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.curriculum .fila {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.curriculum .fila .col {
+    width: 49%;
+    padding: 0 20px;
+}
+
+.curriculum .fila .col h3 {
+    margin-bottom: 25px;
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity))
+
+}
+
+.curriculum .fila .izquierda{
+    border-right: 2px solid #252A2E;
+}
+.curriculum .fila .derecha{
+    border-left: 2px solid #252A2E;
+}
+
+
+
+.curriculum .fila .izq{
+    --tw-text-opacity: 1;
+    border-right: 5px solid rgb(192 132 252 / var(--tw-text-opacity));
+    margin-right: 20px;
+}
+.curriculum .fila .der{
+    --tw-text-opacity: 1;
+    border-left: 5px solid rgb(192 132 252 / var(--tw-text-opacity));
+    margin-left: 20px;
+}
+
+.curriculum .fila .item {
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #003366;
+    border-radius: 15px;
+    position: relative;
+}
+
+.curriculum .fila .item h4 {
+    margin-bottom: 10px;
+    
+}
+
+.curriculum .fila .item .casa {
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity));
+    font-size: 22px;
+    font-weight: bold;
+    display: block;
+}
+
+.curriculum .fila .item .fecha {
+    display: block;
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity));
+    margin-bottom: 10px;
+}
+
+.curriculum .fila .item p {
+    line-height: 24px;
+}
+
+/* Conectores y puntos */
+.curriculum .fila .item .conectori{
+    height: 2px;
+    --tw-text-opacity: 1;
+    background-color: rgb(192 132 252 / var(--tw-text-opacity));
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    right: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectori .circuloi{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    --tw-text-opacity: 1;
+    background-color: rgb(192 132 252 / var(--tw-text-opacity));
+    float: right;
+    position: relative;
+    bottom: 4px;
+}
+
+.curriculum .fila .item .conectord{
+    height: 2px;
+    --tw-text-opacity: 1;
+    background-color: rgb(192 132 252 / var(--tw-text-opacity));
+    width: 47px;
+    position: absolute;
+    top: 50%;
+    left: -47px;
+    z-index: 5;
+}
+.curriculum .fila .item .conectord .circulod{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    --tw-text-opacity: 1;
+    background-color: rgb(192 132 252 / var(--tw-text-opacity));
+    float: left;
+    position: relative;
+    bottom: 4px;
+}
+
+
+.curriculum .izquierda {
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity));
+    margin-right: 10px;
+}
+
+.curriculum .derecha {
+    --tw-text-opacity: 1;
+    color: rgb(192 132 252 / var(--tw-text-opacity));
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
 /*Estilos generales de la letra y espaciado de las otras secciones*/
-.mas-info{
+.mas-info {
     padding: 50px 15px;
     text-align: center;
 }
 
-.mas-info h1{
+.mas-info h1 {
     --tw-text-opacity: 1;
     color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
 
 /*Mis habilidades*/
-#skills{
+#skills {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
 }
-.skills-container{
+
+.skills-container {
     margin: 0px auto;
     padding: 40px 20px;
     width: 60%;
 }
 
-.skills-container h5{
-    text-align: center; 
+.skills-container h5 {
+    text-align: center;
     border-radius: 10px;
     padding: 5px;
     --tw-bg-opacity: 1;
@@ -223,13 +388,14 @@ p, li, a, h2, h3, h4, h5, h6 {
 
 
 /*Certificados*/
-#certificados{
+#certificados {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
 }
-.certificados-container{
+
+.certificados-container {
     margin: 0px auto;
     border-radius: 10px;
     --tw-bg-opacity: 1;
@@ -238,24 +404,24 @@ p, li, a, h2, h3, h4, h5, h6 {
     width: 70%;
 }
 
-.certificados-container .certis{
+.certificados-container .certis {
     --tw-bg-opacity: 1;
-    background-color:#003366;
+    background-color: #003366;
     border-radius: 10px;
     padding: 15px;
 }
 
-.certis a{
+.certis a {
     text-decoration: none;
     --tw-text-opacity: 1;
     color: rgb(192 132 252 / var(--tw-text-opacity));
-    background: none; 
-    border: none; 
+    background: none;
+    border: none;
     padding: 0;
 }
 
 /*Proyectos*/
-#proyectos{
+#proyectos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,7 +429,7 @@ p, li, a, h2, h3, h4, h5, h6 {
     margin-bottom: 100px;
 }
 
-.proyectos-container{
+.proyectos-container {
     border-radius: 10px;
     margin: 0px auto;
     --tw-bg-opacity: 1;
@@ -272,36 +438,36 @@ p, li, a, h2, h3, h4, h5, h6 {
     width: 70%;
 }
 
-.proyectos-container .projects{
+.proyectos-container .projects {
     --tw-bg-opacity: 1;
-    background-color:#003366;
+    background-color: #003366;
     border-radius: 10px;
     padding: 15px;
 }
 
-.proyectos-container img{
+.proyectos-container img {
     --tw-bg-opacity: 1;
-    display: block; 
-    margin: 15px auto ;
+    display: block;
+    margin: 15px auto;
     border-radius: 10px;
     border: 4px solid rgb(135 170 235 / var(--tw-bg-opacity));
 
 }
 
-.projects a{
+.projects a {
     text-decoration: none;
     --tw-text-opacity: 1;
     color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
 /*Footer*/
-.footer-container{
+.footer-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 130px;
     --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));  
+    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
     --tw-text-opacity: 1;
     color: rgb(192 132 252 / var(--tw-text-opacity));
 }
@@ -319,7 +485,8 @@ p, li, a, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1120px) {
     body h1 {
-        font-size: 35px; /* Ajusta el tamaño según tu preferencia */
+        font-size: 35px;
+        /* Ajusta el tamaño según tu preferencia */
     }
 
     .contenedor-sobre-mi {
@@ -327,6 +494,7 @@ p, li, a, h2, h3, h4, h5, h6 {
         flex-direction: column;
         padding-top: 200px;
     }
+
     .sobre-mi {
         border: solid 4px black;
     }
@@ -336,17 +504,17 @@ p, li, a, h2, h3, h4, h5, h6 {
     }
 
     .inicio #redes a {
-        width: 65px; 
+        width: 65px;
         height: 65px;
         margin-right: 15px;
-    
+
     }
 
-    .inicio #redes i{
+    .inicio #redes i {
         font-size: 35px;
         color: rgb(80, 0, 98)
     }
-   
+
 
     .skills-container {
         width: 100%;
