@@ -9,7 +9,18 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;*/
+    
 }
+
+body h1{
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 50px;
+}
+
+p, li, a, h2, h3, h4, h5, h6 {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+}
+
 
 /*luego se borraran*/
 .header{
@@ -78,12 +89,72 @@ body {
 }
 
 
+/*Inicio con mi nombre y Redes de comunacion*/
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Ocupa todo el contenedor .inicio */
+    z-index: 1; /* Coloca detrás del contenido de .inicio */
+}
+
+.inicio {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden; /* Asegura que no haya desbordamiento */
+}
+
+.inicio #redes{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    
+    
+}
+
+.inicio #redes a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: white; 
+    border-radius: 50%; 
+    width: 70px; 
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para un mejor efecto */
+    transition: transform 0.5s ease, background-color 0.5s ease; /* Transición de 0.5s */
+
+}
+
+.inicio #redes i{
+    font-size: 40px;
+    color: rgb(80, 0, 98)
+}
+
+.inicio #redes a:hover {
+    transform: translateY(-10px); 
+    background-color: black; 
+}
+
+.inicio #redes a:hover i {
+    color: white; 
+}
+
+
 
 
 /*se agregarán estilos a cada sección*/
 
 /*Sobre mi con la fotografia*/
-
 #sobremi{
     height: 100vh;
 }
@@ -111,7 +182,7 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
-    padding: 0 10%;
+    padding: 0px 40px;
     justify-content: space-between;
 }
 
@@ -234,18 +305,8 @@ body {
     color: rgb(192 132 252 / var(--tw-text-opacity));
 }
 
-.footer-redes a{
-    text-decoration: none;
-    font-size: 20px;
-    --tw-text-opacity: 1;
-    color: rgb(192 132 252 / var(--tw-text-opacity));
-}
 
-.footer-redes i{
-    margin-right: 15px;
-    font-size: 25px;
-    color: white;
-}
+
 
 
 
@@ -256,44 +317,53 @@ body {
 
 
 @media (max-width: 1120px) {
- 
-    .contenedor-sobre-mi{
+    body h1 {
+        font-size: 35px; /* Ajusta el tamaño según tu preferencia */
+    }
+
+    .contenedor-sobre-mi {
         display: flex;
         flex-direction: column;
         padding-top: 200px;
     }
-    .sobre-mi{
+    .sobre-mi {
         border: solid 4px black;
     }
 
-    .mas-info{
+    .mas-info {
         margin-top: 100px;
     }
 
-    .skills-container{
-        width: 100%;
+    .inicio #redes a {
+        width: 65px; 
+        height: 65px;
+        margin-right: 15px;
+    
+    }
+
+    .inicio #redes i{
+        font-size: 35px;
+        color: rgb(80, 0, 98)
     }
    
 
-    .certificados-container{
-        width: 350px
+    .skills-container {
+        width: 100%;
     }
-    
-    .certificados-container .certis{
+
+    .certificados-container {
+        width: 350px;
+    }
+
+    .certificados-container .certis {
         width: 300px;
     }
 
-
-
-
-
-
-    .proyectos-container{
-        width: 350px
+    .proyectos-container {
+        width: 350px;
     }
-    
-    .proyectos-container .projects{
+
+    .proyectos-container .projects {
         width: 300px;
     }
-
 }
