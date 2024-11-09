@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let currentTextIndex = 0;
     let currentCharIndex = 0;
     const typewriterElement = document.getElementById("typewriter");
+    let isTyping = false;
 
     function typeText() {
         if (currentCharIndex < texts[currentTextIndex].length) {
@@ -44,14 +45,26 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-   
+    function startTypingAnimation() {
+        if (!isTyping) {
+            isTyping = true;
+            typeText();
+        }
+    }
+
+    document.addEventListener("scroll", function() {
+        const rect = typewriterElement.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+            startTypingAnimation();
+        }
+    });
+
     typewriterElement.addEventListener("click", function() {
         currentTextIndex = 0;
         currentCharIndex = 0;
         typewriterElement.textContent = "";
         typeText(); 
     });
-
-    typeText(); // Comienza la animación
 });
+
 

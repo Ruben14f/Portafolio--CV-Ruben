@@ -202,7 +202,7 @@ h6 {
 
 /*CURRICULUM*/
 .curriculum{
-    margin-top: 200px;
+    margin-bottom: 200px;
 }
 .curriculum h1{
     display: flex;
@@ -385,25 +385,26 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 
-.skills-container {
+.skills-container{
     margin: 0px auto;
     padding: 40px 20px;
-    width: 60%;
+
 }
 
-.skills-container h5 {
-    text-align: center;
-    border-radius: 10px;
-    padding: 5px;
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
+.skills-container .skill-item-with-image {
+    padding: 10px;
+    background-color: #003366;
 }
 
-
-
+.skill-item-with-image {
+    --tw-text-opacity: 1;
+    border: 2px solid rgb(192 132 252 / var(--tw-text-opacity));
+    padding: 10px;
+}
 
 /*Proyectos*/
 #proyectos {
@@ -492,6 +493,7 @@ h6 {
 .contact-container{
     display: flex;
     justify-content: center;
+    
 }
 
 .cont-contacto{
@@ -505,7 +507,7 @@ h6 {
         0 0 10px rgba(123, 52, 208, 0.4), 
         0 0 20px rgba(123, 52, 208, 0.3), 
         0 0 40px rgba(123, 52, 208, 0.2); 
-    width: 50%;
+    width: 45%;
     margin: 5% 0%;
     
 }
@@ -535,6 +537,11 @@ h6 {
 
 
 @media (max-width: 1120px) {
+
+    .skills-container .skill-item-with-image img{
+        width: 60px;
+    }
+
     body h1 {
         font-size: 35px;
     }
@@ -610,6 +617,8 @@ h6 {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
+
+    
 }
 
 @media screen and (max-width: 700px) {
@@ -667,11 +676,12 @@ h6 {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 150px;
     }
 
     .cont-contacto {
         width: 100%;
-        padding: 20px;
+        padding: 0px 20px;
         margin: 10% 0;
         display: flex;
         flex-direction: column;
@@ -687,6 +697,13 @@ h6 {
     .contact-info h2{
         display: flex;
         flex-direction: row;
+    }
+
+    .contact-info .tel h2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .info-cont {
@@ -731,6 +748,14 @@ h6 {
         flex-direction: row;
     }
     
+    .contact-info .tel h2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+  
+
     .info-cont h2 {
         font-size: 16px;
     }
@@ -748,3 +773,352 @@ h6 {
         padding: 8px 15px;
     }
 }
+
+@media screen and (width: 768px) and (height: 1024px) {
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 300px;
+    }
+
+    .cont-contacto {
+        padding: 10px;
+        width: 75%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactame h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-info h2 {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+   
+    .contact-info i {
+        font-size: 45px;
+        
+    }
+    
+
+}
+
+@media screen and (width: 820px) and (height: 1180px) {
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 400px;
+    }
+
+    .cont-contacto {
+        padding: 10px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactame h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-info h2 {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .contact-info i {
+        font-size: 45px;
+        
+    }
+
+}
+
+@media screen and (width: 1024px) and (height: 1366px) {
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 60%;
+    }
+
+    .cont-contacto {
+        padding: 10px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactame h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-info h2 {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-info i {
+        font-size: 45px;
+        
+    }
+    
+
+}
+
+@media screen and (width: 912px) and (height: 1368px) {
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 60%;
+    }
+
+    .cont-contacto {
+        padding: 10px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactame h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-info h2 {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+ 
+    .contact-info i {
+        font-size: 45px;
+        
+    }
+    
+    .contenedor-sobre-mi {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (width: 853px) and (height: 1280px) {
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 60%;
+    }
+
+    .cont-contacto {
+        padding: 10px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactame h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-info h2 {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+
+   
+    .contact-info i {
+        font-size: 45px;
+        
+    }
+
+
+    .contenedor-sobre-mi {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (width: 1024px) and (height: 600px) {
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .cont-contacto {
+        padding: 10px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactame h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-info h2 {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+  
+    .contact-info i {
+        font-size: 45px;
+        
+    }
+    
+ 
+
+    .contenedor-sobre-mi {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media screen and (width: 1280px) and (height: 800px) {
+    .contact-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .cont-contacto {
+        padding: 10px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactame h1 {
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .contact-info h2 {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+    }
+
+  
+    .contact-info i {
+        font-size: 45px;
+        
+    }
+    
+  
+
+    .contenedor-sobre-mi {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+/*
+RESOLUCIONES QUE SE
+1280 x 800
+1024 x 600
+853 x 1280
+540 x 720
+912 x 1368
+1024 x 1366
+820 x 1180
+768 x 1024*/
