@@ -1,23 +1,34 @@
+
+if (window.innerWidth < 768){
+  particlesJS('particles-js', {
+    particles: {
+        number: {
+            value: 20 
+        },
+    }
+  });
+}
+
 particlesJS("particles-js", {
   particles: {
     number: {
-      value: 50, // Ajusta la cantidad de partículas para un efecto personalizado
+      value: 50, 
       density: {
         enable: true,
-        value_area: 400 // Espaciado de las partículas
+        value_area: 500 
       }
     },
     color: {
-      value: ["#6f42c1", "#0d6efd", "#FFFFFF"] // Colores variados para un efecto único
+      value: ["#6f42c1", "#0d6efd", "#FFFFFF"] 
     },
     shape: {
-      type: "circle", // Puedes cambiarlo a "polygon" o "triangle" para variar
+      type: "circle", 
       stroke: {
         width: 0,
         color: "#000"
       },
       polygon: {
-        nb_sides: 5 // Número de lados para formas poligonales
+        nb_sides: 0
       },
       image: {
         src: "img/github.svg",
@@ -26,22 +37,22 @@ particlesJS("particles-js", {
       }
     },
     opacity: {
-      value: 0.6, // Mayor opacidad para un efecto más visible
+      value: 0.6, 
       random: true,
       anim: {
         enable: true,
         speed: 1,
-        opacity_min: 0.3, // Mínimo de opacidad para animaciones
+        opacity_min: 0.3, 
         sync: false
       }
     },
     size: {
-      value: 4, // Tamaño de las partículas
+      value: 5,
       random: true,
       anim: {
         enable: true,
         speed: 4,
-        size_min: 2, // Tamaño mínimo durante la animación
+        size_min: 2, 
         sync: false
       }
     },
@@ -49,12 +60,12 @@ particlesJS("particles-js", {
       enable: true,
       distance: 150,
       color: "#ffffff",
-      opacity: 0.3, // Opacidad de las líneas de conexión
+      opacity: 0.35, 
       width: 1
     },
     move: {
       enable: true,
-      speed: 3, // Velocidad de movimiento
+      speed: 1.55, 
       direction: "none",
       random: true,
       straight: false,
@@ -72,11 +83,11 @@ particlesJS("particles-js", {
     events: {
       onhover: {
         enable: true,
-        mode: "grab" // Cambia a "bubble" o "grab" para otros efectos
+        mode: "grab" 
       },
       onclick: {
         enable: false,
-        mode: "push" // Efecto al hacer clic
+        mode: "push"
       },
       resize: true
     },
@@ -106,5 +117,6 @@ particlesJS("particles-js", {
       }
     }
   },
-  retina_detect: true
+  retina_detect: true,
+  fps_limit: 30,
 });

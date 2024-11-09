@@ -8,7 +8,22 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    position: relative;
+    overflow-x: hidden; 
 
+}
+
+/*AJUSTE PARA CELULARES*/
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(3, 8, 31, 0.686), rgba(2, 6, 23, 0.744)),
+        url('../img/wallpaper/galaxy_background.png') center/cover no-repeat;
+    z-index: -1; 
 }
 
 body h1 {
@@ -427,8 +442,6 @@ h6 {
 .proyectos-container {
     border-radius: 10px;
     margin: 0px auto;
-    --tw-bg-opacity: 1;
-    background-color: rgb(31 41 55 / var(--tw-bg-opacity));
     padding: 30px 15px;
     width: 70%;
 }
@@ -454,6 +467,79 @@ h6 {
     --tw-text-opacity: 1;
     color: rgb(192 132 252 / var(--tw-text-opacity));
 }
+
+.card {
+    max-width: 50%;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-body {
+    background-color: rgb(31, 41, 55);
+    border-radius: 0 0 20px 20px;
+    padding: 20px;
+    color: white;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent 50%, rgba(0, 0, 0, 0.7));
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 20px;
+    color: white;
+}
+
+.year-label {
+    background-color: purple;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.project-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.tech-tags span {
+    display: inline-block;
+    background-color: purple;
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+
+.card-links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.card-links a {
+    text-decoration: none;
+    color: #D4A5FF;
+    transition: color 0.3s;
+}
+
+.card-links a:hover {
+    color: #6EC5FF;
+}
+
+
+/* CONTACTO */
 
 
 .contactame{
@@ -545,6 +631,18 @@ h6 {
 
 
 /*GENERALES*/
+
+@media screen and (min-width: 1024px) {
+    .inicio {
+        margin-bottom: -250px; 
+    }
+    .contenedor-sobre-mi{
+        margin-bottom: -20px; 
+    }
+
+
+}
+
 @media screen and  (max-width: 1120px) {
 
     .skills-container .skill-item-with-image img{
@@ -600,6 +698,15 @@ h6 {
 
     .proyectos-container .projects {
         width: 300px;
+    }
+    .proyectos-container .card {
+        max-width: 70%;  
+    }
+    .overlay {
+        padding: 15px; 
+    }
+    .project-title {
+        font-size: 1.3em; 
     }
 }
 
@@ -757,6 +864,8 @@ h6 {
     .skills-container{
         padding: 80px;
     }
+
+    
 
 }
 
@@ -1157,13 +1266,83 @@ h6 {
    }
 }
 
-/*
-RESOLUCIONES QUE SE
-1280 x 800
-1024 x 600
-853 x 1280
-540 x 720
-912 x 1368
-1024 x 1366
-820 x 1180
-768 x 1024*/
+@media screen and (max-width: 768px) {
+    body::before {
+        background-attachment: scroll;
+    }
+
+    .contact-container {
+        width: 100%; 
+        padding: 50px; 
+    }
+
+    .contactame h1 {
+        font-size: 22px;
+    }
+
+    .contact-info h2 {
+        font-size: 16px; 
+    }
+
+    .proyectos-container {
+        width: 100%; 
+    }
+    .card {
+        max-width: 90%;
+    }
+    .tech-tags span {
+        padding: 3px 7px; 
+        font-size: 0.9em; 
+    }
+    .card-links a {
+        font-size: 18px; 
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-position: center;
+    }
+
+    .proyectos-container .card {
+        max-width: 100%; /
+    }
+    .overlay {
+        padding: 10px; 
+    }
+    .project-title {
+        font-size: 1.1em; 
+    }
+    .tech-tags span {
+        margin-right: 3px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1120px) {
+    .proyectos-container .card {
+        max-width: 80%; 
+        margin: 0 auto;
+    }
+    
+    .card-body {
+        padding: 15px; 
+    }
+
+    .overlay {
+        padding: 15px; 
+    }
+
+    .project-title {
+        font-size: 1.2em; 
+    }
+
+    .tech-tags span {
+        padding: 4px 8px; 
+        font-size: 0.9em; 
+    }
+
+    .card-links a {
+        font-size: 16px; 
+    }
+}
