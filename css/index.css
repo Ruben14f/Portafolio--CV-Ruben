@@ -45,16 +45,6 @@ h6 {
 }
 
 
-/*luego se borraran*/
-.header {
-    border: solid 1px black;
-
-}
-
-.navbar {
-    border: solid 1px black;
-}
-
 /*Estilos para el navbar y cabezera*/
 .header {
     position: fixed;
@@ -185,6 +175,45 @@ h6 {
     color: white;
 }
 
+.inicio button {
+    background-color: rgb(120, 0, 136);
+    cursor: pointer;
+    border: 2px solid white;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    z-index: 15; 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.inicio button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    --tw-text-opacity: 1;
+    background-color: rgb(192 132 252 / var(--tw-text-opacity));
+    z-index: -1;
+    transition: width 1s; 
+}
+
+.inicio button:hover::after {
+    width: 100%; 
+}
+
+
+.inicio a{
+    text-decoration: none;
+    color: white;
+}
+.
+
+
 
 
 
@@ -210,7 +239,7 @@ h6 {
 
 .sobre-mi {
     max-width: 600px;
-    border: solid 2px black;
+   
 }
 
 .contenedor-sobre-mi {
