@@ -211,7 +211,7 @@ h6 {
     text-decoration: none;
     color: white;
 }
-.
+
 
 
 
@@ -220,9 +220,10 @@ h6 {
 /*se agregarán estilos a cada sección*/
 
 /*Sobre mi con la fotografia*/
-#sobremi {
+#sobremi{
     height: 100vh;
 }
+
 
 .img-personal {
     display: flex;
